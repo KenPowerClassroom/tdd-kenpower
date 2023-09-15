@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Test1",
+      "setup": " msbuild /p:Configuration=Debug /p:Platform=x86",
+      "run": "ls",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
