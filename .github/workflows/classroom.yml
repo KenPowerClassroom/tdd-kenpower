@@ -18,9 +18,9 @@ jobs:
       - name: Setup VSTest and add to PATH
         uses: darenm/Setup-VSTest@v1
       - uses: education/autograding@v1
-      - name: Run VSTest
       - run: dir
-      - id: run_vstest
+      - name: Run VSTest
+        id: run_vstest
         run: |
           $testExe=@(gci x64\Debug\*[Tt]est*.exe)[0].Name
           $GTAdir=@(gci packages/GoogleTestAdapter*)[0].Name # find GoogleTestAdapter
