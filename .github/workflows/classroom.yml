@@ -19,10 +19,11 @@ jobs:
         uses: darenm/Setup-VSTest@v1
       - uses: education/autograding@v1
       - name: Run VSTest
-        id: run_vstest
+      - run: dir
+      - id: run_vstest
         run: |
-          $testExe=@(gci Debug\*[Tt]est*.exe)[0].Name
+          $testExe=@(gci x64\Debug\*[Tt]est*.exe)[0].Name
           $GTAdir=@(gci packages/GoogleTestAdapter*)[0].Name # find GoogleTestAdapter
-          vstest.console.exe /Platform:x86 .\Debug\$testExe /TestAdapterPath:.\packages\$GTAdir\build\_common\
+          vstest.console.exe /Platform:x86 .\x64\Debug\$testExe /TestAdapterPath:.\packages\$GTAdir\build\_common\
         shell: pwsh
 
