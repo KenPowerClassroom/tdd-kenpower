@@ -3,7 +3,7 @@
     {
       "name": "test2",
       "setup": "",
-      "run": "echo *******TEST"************",
+      "run": "echo *******TEST************",
       "input": "",
       "output": "",
       "comparison": "exact",
