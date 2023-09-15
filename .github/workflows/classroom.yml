@@ -13,6 +13,6 @@ jobs:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
-      - run: nuget restore
       - uses: microsoft/setup-msbuild@v1.1
+      - run: nuget restore
       - uses: education/autograding@v1
