@@ -15,4 +15,13 @@ jobs:
       - uses: actions/checkout@v2
       - uses: microsoft/setup-msbuild@v1.1
       - run: nuget restore
+      - name: Setup VSTest and add to PATH
+        uses: darenm/Setup-VSTest@v1
+      - name: Run VSTest
+        id: run_vstest
+        run: |
+          $testExe=@(gci Debug\*[Tt]est*.exe)[0].Name
+          $GTAdir=@(gci packages/GoogleTestAdapter*)[0].Name # find GoogleTestAdapter
+          vstest.console.exe /Platform:x86 .\Debug\$testExe /TestAdapterPath:.\packages\$GTAdir\build\_common\
+        shell: pwsh
       - uses: education/autograding@v1
