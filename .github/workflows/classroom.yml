@@ -23,6 +23,7 @@ jobs:
         id: run_vstest
         run: |
           $testExe=@(gci x64\Debug\*[Tt]est*.exe)[0].Name
+          cmd -r dir packages
           $GTAdir=@(gci packages/GoogleTestAdapter*)[0].Name # find GoogleTestAdapter
           echo "GTADir : $GTAdir"
           vstest.console.exe .\x64\Debug\$testExe /TestAdapterPath:.\packages\$GTAdir\build\_common\
