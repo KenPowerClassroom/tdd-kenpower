@@ -2,13 +2,23 @@
   "tests": [
     {
       "name": "Test1",
-      "setup": " msbuild /p:Configuration=Debug /p:Platform=x86",
-      "run": "ls",
+      "setup": "./build.sh",
+      "run": "echo ************RUN COMMAND*****************",
       "input": "",
       "output": "",
       "comparison": "exact",
       "timeout": 10,
-      "points": 1
+      "points": null
+    },
+    {
+      "name": "test2",
+      "setup": "./build.sh",
+      "run": "echo *******TEST\"************",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
     }
   ]
 }
