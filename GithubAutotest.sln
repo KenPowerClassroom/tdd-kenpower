@@ -7,6 +7,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GithubAutotest", "GithubAut
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AutotestTetsts", "AutotestTetsts\AutotestTetsts.vcxproj", "{50090273-4A94-408B-88B9-0993A35886B4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8BDD1813-AB73-4F50-B998-D27A58527C0A}"
+	ProjectSection(SolutionItems) = preProject
+		build.sh = build.sh
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
