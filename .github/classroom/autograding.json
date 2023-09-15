@@ -1,16 +1,6 @@
 {
   "tests": [
     {
-      "name": "Test1",
-      "setup": "./build.sh",
-      "run": "echo ************RUN COMMAND*****************",
-      "input": "",
-      "output": "",
-      "comparison": "exact",
-      "timeout": 10,
-      "points": null
-    },
-    {
       "name": "test2",
       "setup": "./build.sh",
       "run": "echo *******TEST\"************",
