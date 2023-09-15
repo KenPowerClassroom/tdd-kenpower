@@ -3,7 +3,7 @@
     {
       "name": "test2",
       "setup": "dir",
-      "run": "build.bat"",
+      "run": "build.bat",
       "input": "",
       "output": "",
       "comparison": "exact",
