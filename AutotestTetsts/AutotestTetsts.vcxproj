@@ -45,7 +45,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\GithubAutotest\GithubAutotest.vcxproj">
+    <ProjectReference Include="..\GithubAutotest.vcxproj">
       <Project>{716554a9-8a0b-44da-9c5b-db6605437143}</Project>
     </ProjectReference>
   </ItemGroup>
