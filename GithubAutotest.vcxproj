@@ -130,6 +130,7 @@
     <ClCompile Include="GithubAutotest.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="build.bat" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
