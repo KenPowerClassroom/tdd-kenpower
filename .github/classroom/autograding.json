@@ -2,7 +2,7 @@
   "tests": [
     {
       "name": "test2",
-      "setup": "",
+      "setup": "./build.sh",
       "run": "echo *******TEST************",
       "input": "",
       "output": "",
